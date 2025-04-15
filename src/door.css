@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 30px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.data-container, .chart-container {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+.icon {
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+.label {
+  flex: 1;
+  font-weight: bold;
+  color: #00adb5;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.chart-container canvas {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+}

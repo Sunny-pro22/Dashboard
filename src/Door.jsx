@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';  
-import './Door.css';
+import './door.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 

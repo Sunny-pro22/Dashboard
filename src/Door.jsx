@@ -16,7 +16,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 function DoorSensorDashboard() {
   const [status, setStatus] = useState({ enter: 0, exit: 0, total: 0 });
-  const espIP = 'http://192.168.52.127';
+  const espIP = 'http://192.168.216.127';
 
   const fetchStatus = async () => {
     try {
